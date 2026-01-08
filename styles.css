@@ -1,0 +1,454 @@
+/* ========================================
+   Minimum Defensible Inventory — Landing Page
+   Mobile-first responsive styles
+   ======================================== */
+
+/* ----- Reset & Base ----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #2b2b2b;
+  background-color: #fff;
+}
+
+/* ----- Container ----- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ----- Typography ----- */
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.25em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: #1a5f7a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: #134a5f;
+}
+
+/* ----- Buttons ----- */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+  background-color: #1a5f7a;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #134a5f;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* ----- Hero ----- */
+.hero {
+  padding: 64px 0 56px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #6c757d;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.subheadline {
+  font-size: 1.125rem;
+  color: #495057;
+  max-width: 600px;
+  margin-bottom: 28px;
+}
+
+.credibility {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* ----- Section Spacing ----- */
+section {
+  padding: 64px 0;
+}
+
+section:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* ----- Problem Section ----- */
+.problems {
+  background-color: #fff;
+}
+
+.problem-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.problem-block h2 {
+  font-size: 1.25rem;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #1a5f7a;
+  margin-bottom: 16px;
+}
+
+.problem-block ul {
+  padding-left: 1.1em;
+}
+
+.problem-block li {
+  margin-bottom: 12px;
+}
+
+.problem-summary {
+  margin-top: 40px;
+  padding: 20px 24px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #1a5f7a;
+  font-size: 1.0625rem;
+}
+
+/* ----- Solution Section ----- */
+.solution h2 {
+  margin-bottom: 24px;
+}
+
+.solution-intro {
+  margin-bottom: 24px;
+}
+
+.solution-intro p {
+  margin-bottom: 1em;
+}
+
+.solution-list {
+  margin-bottom: 24px;
+}
+
+.solution-list li {
+  margin-bottom: 12px;
+}
+
+.solution-note {
+  font-size: 0.9375rem;
+  color: #6c757d;
+  padding: 16px 20px;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+}
+
+/* ----- Audience Section ----- */
+.audience-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.audience-block {
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.audience-block h3 {
+  margin-bottom: 16px;
+}
+
+.for-you {
+  background-color: #e8f4f8;
+  border: 1px solid #b8dae6;
+}
+
+.not-for-you {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+/* ----- Process Section ----- */
+.steps {
+  display: grid;
+  gap: 32px;
+}
+
+.step {
+  position: relative;
+  padding-left: 56px;
+}
+
+.step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a5f7a;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.step h3 {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.step p {
+  margin-bottom: 0;
+  color: #495057;
+}
+
+.process-cta {
+  margin-top: 40px;
+  padding: 20px 24px;
+  background-color: #e8f4f8;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ----- Waitlist Section ----- */
+.waitlist {
+  background-color: #fff;
+}
+
+.waitlist-card {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.waitlist-card h2 {
+  margin-bottom: 16px;
+}
+
+.waitlist-card > p {
+  color: #495057;
+  margin-bottom: 24px;
+}
+
+.beehiiv-form {
+  margin-top: 20px;
+}
+
+.beehiiv-embed {
+  margin: 0 auto;
+}
+
+/* ----- FAQ Section ----- */
+.faq h2 {
+  margin-bottom: 32px;
+}
+
+.faq-list {
+  max-width: 720px;
+}
+
+.faq-item {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-item h3 {
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  color: #495057;
+}
+
+/* ----- Footer ----- */
+.footer {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.disclaimer {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 0.875rem;
+  color: #495057;
+}
+
+.footer-links a:hover {
+  color: #1a5f7a;
+}
+
+.copyright {
+  font-size: 0.8125rem;
+  color: #adb5bd;
+  margin-bottom: 0;
+}
+
+/* ========================================
+   Desktop Styles (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .subheadline {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 80px 0;
+  }
+
+  /* Problem grid: 3 columns */
+  .problem-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  /* Solution: two-column layout */
+  .solution-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .solution-note {
+    max-width: 720px;
+  }
+
+  /* Audience: two columns */
+  .audience-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  /* Steps: horizontal */
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .step {
+    padding-left: 0;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .step-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Waitlist card */
+  .waitlist-card {
+    padding: 48px 56px;
+  }
+}
+
